@@ -1,0 +1,1006 @@
+@charset "UTF-8";
+* {
+  font-family: "微軟正黑體";
+}
+
+html, body {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
+
+#body {
+  display: block;
+}
+
+.bg-title-bg {
+  background-image: url(https://img4.momoshop.com.tw/ecm/img/online/10/007/28/759/images/bg_01.jpg?t=1577959130659);
+  z-index: -4;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  pointer-events: none;
+}
+
+.bg-repeat-bg {
+  z-index: -5;
+  position: absolute;
+  background-image: url(https://img4.momoshop.com.tw/ecm/img/online/10/007/28/759/images/bg_02.jpg?t=1577959130659);
+  background-repeat: repeat-y;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  background-position: center top;
+}
+
+.bg-ballon {
+  z-index: -2;
+  background-image: url(https://img1.momoshop.com.tw/ecm/img/online/10/007/28/762/images/bg_deco.png?t=1578272089793);
+  position: absolute;
+  top: 250px;
+  left: 0px;
+  width: 100%;
+  height: 4800px;
+  background-repeat: repeat-y;
+  background-position: center top;
+  pointer-events: none;
+}
+
+.bg-cloud-edge {
+  z-index: -1;
+  position: absolute;
+  background-image: url(https://img1.momoshop.com.tw/ecm/img/online/10/007/28/762/images/bg_03.jpg?t=1578272089793);
+  top: 4500px;
+  left: 0px;
+  width: 100%;
+  height: 35%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  pointer-events: none;
+}
+
+.bg-bottom {
+  z-index: -1;
+  position: absolute;
+  background-image: url(https://img1.momoshop.com.tw/ecm/img/online/10/007/28/762/images/bg_04.jpg?t=1578272089793);
+  top: 5281px;
+  left: 0px;
+  width: 100%;
+  height: 35%;
+  background-repeat: repeat-y;
+  background-position: center top;
+  pointer-events: none;
+}
+
+.go-top {
+  position: fixed;
+  z-index: 5;
+  right: 20px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 12px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  color: #000;
+  line-height: 50px;
+}
+.go-top:hover {
+  height: 80px;
+}
+
+.wrapper-articlelist {
+  position: relative;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  max-width: 1200px;
+  height: 600px;
+}
+
+.right-nav-fixed {
+  z-index: 999;
+  position: fixed;
+  text-align: center;
+  right: 0px;
+  top: 50px;
+  width: 100px;
+  color: #fff;
+}
+.right-nav-fixed .block-feedback {
+  margin: 0px;
+  padding: 0px;
+}
+.right-nav-fixed .block-feedback .feedback-pic {
+  margin-left: -22px;
+  margin-bottom: -5px;
+}
+
+ul.fixedbox-01 {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  line-height: 48px;
+  cursor: pointer;
+}
+ul.fixedbox-01 li.nav-slide {
+  margin-top: 2px;
+  background-color: rgba(25, 25, 25, 0.5);
+}
+ul.fixedbox-01 li.nav-slide:hover {
+  background-color: #000;
+}
+ul.fixedbox-01 li.nav-slide a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.back-to-top .block-for-top {
+  margin-top: 2px;
+  position: relative;
+  height: 80px;
+  overflow: hidden;
+}
+.back-to-top .block-for-top .radius-block {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  border-radius: 40px;
+  line-height: 220px;
+  top: -80px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.logo-pic {
+  z-index: 10;
+  position: absolute;
+  left: 30px;
+  top: 15px;
+}
+
+.event-banner-pic {
+  z-index: 5;
+  position: absolute;
+  left: 232px;
+  top: 10px;
+}
+
+.ballon-updown {
+  position: absolute;
+  left: 970px;
+  top: 80px;
+  animation: updown_ani 1.5s infinite alternate;
+}
+
+.snow-1, .snow-2, .snow-3 {
+  position: absolute;
+  animation: kaiten 7s infinite linear;
+}
+
+.snow-1 {
+  left: 50px;
+  top: 80px;
+}
+
+.snow-2 {
+  left: 990px;
+  top: 360px;
+}
+
+.snow-3 {
+  left: 220px;
+  top: 480px;
+}
+
+.area-hot {
+  text-align: center;
+  position: relative;
+  max-width: 1200px;
+  height: 1100px;
+}
+
+.hot-title {
+  width: 100%;
+}
+
+.ul-block {
+  position: relative;
+  min-width: 1200px;
+}
+
+ul.hot-pics {
+  position: absolute;
+  text-align: center;
+}
+ul.hot-pics li.hot {
+  display: inline-block;
+  list-style: none;
+  margin-right: 20px;
+}
+ul.hot-pics li.hot img.hot {
+  transition: 0.3s;
+}
+ul.hot-pics li.hot img.hot:hover {
+  transform: scale(1.02);
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5)) brightness(105%);
+}
+
+.swiper-slideshow {
+  position: relative;
+  width: 1220px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.swiper-pics {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.area-brand {
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+}
+.area-brand .brand-title {
+  margin: 50px;
+}
+
+ul.brand {
+  display: block;
+}
+ul.brand li.brand {
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #898989;
+  width: 280px;
+  height: 420px;
+  margin: 8px;
+}
+ul.brand li.brand .B-img img {
+  width: 100%;
+}
+
+li.brand {
+  cursor: pointer;
+  transition: 0.5s;
+}
+li.brand:hover {
+  transform: scale(0.97);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.B-img, .B-logo, .B-slogan, .B-go {
+  text-align: center;
+  position: relative;
+}
+
+.B-logo {
+  margin-top: -12px;
+  width: 100%;
+}
+.B-logo a img {
+  width: auto;
+  height: 40px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.B-slogan {
+  margin-top: 5px;
+  margin-bottom: 8px;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+}
+.B-slogan a {
+  font-size: 22px;
+  line-height: 50px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.B-go {
+  margin: 0px auto;
+  margin-bottom: 15px;
+  width: 145px;
+  height: 32px;
+  background-color: #000;
+}
+.B-go a {
+  color: #fff;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.area-today, .area-hotsale {
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+}
+.area-today .today-title-bg, .area-today .hotsale-title-bg, .area-hotsale .today-title-bg, .area-hotsale .hotsale-title-bg {
+  position: relative;
+  text-align: center;
+}
+.area-today .today-title-bg ul.today, .area-today .today-title-bg ul.hotsale, .area-today .hotsale-title-bg ul.today, .area-today .hotsale-title-bg ul.hotsale, .area-hotsale .today-title-bg ul.today, .area-hotsale .today-title-bg ul.hotsale, .area-hotsale .hotsale-title-bg ul.today, .area-hotsale .hotsale-title-bg ul.hotsale {
+  display: block;
+  position: absolute;
+  top: 180px;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+  margin-top: 20px;
+  width: 1220px;
+  padding: 0px;
+}
+
+li.today-big:hover h4, li.today:hover h4, li.hotsale-big:hover h4, li.hotsale:hover h4 {
+  color: #d92670;
+}
+
+li.today-big, li.hotsale-big {
+  float: left;
+  display: inline-block;
+  background-color: #fff;
+  width: 360px;
+  height: 565px;
+  margin-right: 1px;
+  margin-left: 15px;
+}
+li.today-big a, li.hotsale-big a {
+  display: inline-block;
+  text-decoration: none;
+  height: 100%;
+}
+li.today-big a img, li.hotsale-big a img {
+  margin: 30px 0px 0px 0px;
+  padding: 18px;
+  width: 310px;
+  height: 310px;
+}
+li.today-big a h3, li.hotsale-big a h3 {
+  margin: 0px;
+  padding: 0px 10px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color: #cc0000;
+  background: #fff;
+}
+li.today-big a h4, li.hotsale-big a h4 {
+  margin: 10px 0px;
+  padding: 0px 10px;
+  overflow: hidden;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #000;
+}
+li.today-big a p, li.hotsale-big a p {
+  margin-top: -5px;
+  padding: 0px;
+  width: 360px;
+  height: 33px;
+  text-align: center;
+  color: #d92670;
+}
+li.today-big a p del, li.hotsale-big a p del {
+  font-size: 18px;
+  color: #5e5e5e;
+  padding-right: 5px;
+}
+li.today-big a p b, li.today-big a p .money, li.hotsale-big a p b, li.hotsale-big a p .money {
+  font-weight: bold;
+}
+li.today-big a p .price, li.hotsale-big a p .price {
+  font-size: 50px;
+  margin-left: 5px;
+}
+
+li.today, li.hotsale {
+  float: left;
+  display: inline-block;
+  position: relative;
+  margin: 0px 1px 1px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 206px;
+  height: 282px;
+  list-style: none;
+  background: #fff;
+}
+li.today a, li.hotsale a {
+  display: inline-block;
+  text-decoration: none;
+}
+li.today a img, li.hotsale a img {
+  width: 180px;
+  height: 180px;
+  padding: 10px;
+  padding-bottom: 7px;
+}
+li.today a h3, li.hotsale a h3 {
+  margin: 0px;
+  padding: 0px 10px;
+  height: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  color: #cc0000;
+  background: #fff;
+}
+li.today a h4, li.hotsale a h4 {
+  margin: 0px 0px;
+  padding: 0px 10px;
+  overflow: hidden;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+}
+li.today a p, li.hotsale a p {
+  margin-top: -5px;
+  padding: 0 10px;
+  height: 34px;
+  text-align: center;
+  color: #d92670;
+}
+li.today a p del, li.hotsale a p del {
+  padding-right: 5px;
+  color: #5e5e5e;
+  font-size: 12px;
+}
+li.today a p b, li.today a p .money, li.hotsale a p b, li.hotsale a p .money {
+  font-weight: bold;
+  font-size: 14px;
+}
+li.today a p .price, li.hotsale a p .price {
+  font-size: 30px;
+}
+
+.bg-children, .bg-furniture, .bg-sport {
+  margin-top: 10px;
+  position: relative;
+  display: block;
+  background-repeat: no-repeat;
+  width: 1220px;
+  text-align: center;
+}
+
+.bg-children {
+  background-image: url(https://img3.momoshop.com.tw/ecm/img/online/10/007/28/762/images/layout_1220_5x2_03_limit_01.png?t=1578272077576);
+}
+
+.bg-furniture {
+  background-image: url(https://img3.momoshop.com.tw/ecm/img/online/10/007/28/762/images/layout_1220_5x2_03_limit_02.png?t=1578272077576);
+}
+
+.bg-sport {
+  background-image: url(https://img1.momoshop.com.tw/ecm/img/online/10/007/28/762/images/layout_1220_5x2_03_limit_03.png?t=1578272077576);
+}
+
+.children-btn, .furniture-btn, .sport-btn {
+  display: inline-block;
+  position: absolute;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 1px;
+  text-align: left;
+  top: 580px;
+  left: 58px;
+  transition: 0.3s;
+}
+.children-btn h3, .furniture-btn h3, .sport-btn h3 {
+  float: left;
+  position: relative;
+  left: 15px;
+}
+.children-btn img, .furniture-btn img, .sport-btn img {
+  position: absolute;
+  float: right;
+  width: 18px;
+  top: 11px;
+  left: 92px;
+}
+.children-btn:hover, .furniture-btn:hover, .sport-btn:hover {
+  transform: translateX(10%);
+}
+
+.children-btn:hover {
+  background-color: #F2BAC9;
+}
+
+.furniture-btn:hover {
+  background-color: #BAF2D8;
+}
+
+.sport-btn:hover {
+  background-color: #A9DAFB;
+}
+
+ul.children, ul.furniture, ul.sport {
+  display: inline-block;
+  width: 1000px;
+  margin: 44px 0px 0px 250px;
+  padding: 0px;
+}
+
+li.children-item, li.furniture-item, li.sport-item {
+  position: relative;
+  float: left;
+  display: inline-block;
+  background-color: #fff;
+  width: 230px;
+  height: 350px;
+  list-style: none;
+  margin: 0px 12px 10px 0px;
+  text-align: center;
+  transition: 0.3s;
+}
+li.children-item .children-brand, li.children-item .furniture-brand, li.children-item .sport-brand, li.furniture-item .children-brand, li.furniture-item .furniture-brand, li.furniture-item .sport-brand, li.sport-item .children-brand, li.sport-item .furniture-brand, li.sport-item .sport-brand {
+  display: block;
+  text-align: center;
+}
+li.children-item .children-brand a, li.children-item .furniture-brand a, li.children-item .sport-brand a, li.furniture-item .children-brand a, li.furniture-item .furniture-brand a, li.furniture-item .sport-brand a, li.sport-item .children-brand a, li.sport-item .furniture-brand a, li.sport-item .sport-brand a {
+  text-decoration: none;
+  text-align: center;
+}
+li.children-item .children-brand a img, li.children-item .furniture-brand a img, li.children-item .sport-brand a img, li.furniture-item .children-brand a img, li.furniture-item .furniture-brand a img, li.furniture-item .sport-brand a img, li.sport-item .children-brand a img, li.sport-item .furniture-brand a img, li.sport-item .sport-brand a img {
+  width: 200px;
+  height: auto;
+  margin: 10px auto 0px;
+  padding: 0px;
+}
+li.children-item .children-brand a h3, li.children-item .furniture-brand a h3, li.children-item .sport-brand a h3, li.furniture-item .children-brand a h3, li.furniture-item .furniture-brand a h3, li.furniture-item .sport-brand a h3, li.sport-item .children-brand a h3, li.sport-item .furniture-brand a h3, li.sport-item .sport-brand a h3 {
+  color: #fff;
+  margin: 0 auto 5px;
+  padding: 0px;
+  font-size: 18px;
+  width: 200px;
+  height: 30px;
+  line-height: 28px;
+  background-color: #5e5e5e;
+}
+li.children-item .children-brand a h4, li.children-item .furniture-brand a h4, li.children-item .sport-brand a h4, li.furniture-item .children-brand a h4, li.furniture-item .furniture-brand a h4, li.furniture-item .sport-brand a h4, li.sport-item .children-brand a h4, li.sport-item .furniture-brand a h4, li.sport-item .sport-brand a h4 {
+  color: #000;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  height: 20px;
+  transition: 0.3s;
+}
+li.children-item .children-brand a p, li.children-item .furniture-brand a p, li.children-item .sport-brand a p, li.furniture-item .children-brand a p, li.furniture-item .furniture-brand a p, li.furniture-item .sport-brand a p, li.sport-item .children-brand a p, li.sport-item .furniture-brand a p, li.sport-item .sport-brand a p {
+  margin-top: -5px;
+  padding: 0 10px;
+  height: 34px;
+  text-align: center;
+  color: #d92670;
+}
+li.children-item .children-brand a p del, li.children-item .furniture-brand a p del, li.children-item .sport-brand a p del, li.furniture-item .children-brand a p del, li.furniture-item .furniture-brand a p del, li.furniture-item .sport-brand a p del, li.sport-item .children-brand a p del, li.sport-item .furniture-brand a p del, li.sport-item .sport-brand a p del {
+  font-size: 10px;
+  padding-right: 5px;
+  color: #5e5e5e;
+}
+li.children-item .children-brand a p b, li.children-item .children-brand a p .money, li.children-item .furniture-brand a p b, li.children-item .furniture-brand a p .money, li.children-item .sport-brand a p b, li.children-item .sport-brand a p .money, li.furniture-item .children-brand a p b, li.furniture-item .children-brand a p .money, li.furniture-item .furniture-brand a p b, li.furniture-item .furniture-brand a p .money, li.furniture-item .sport-brand a p b, li.furniture-item .sport-brand a p .money, li.sport-item .children-brand a p b, li.sport-item .children-brand a p .money, li.sport-item .furniture-brand a p b, li.sport-item .furniture-brand a p .money, li.sport-item .sport-brand a p b, li.sport-item .sport-brand a p .money {
+  font-weight: bold;
+  font-size: 14px;
+}
+li.children-item .children-brand a p .price, li.children-item .furniture-brand a p .price, li.children-item .sport-brand a p .price, li.furniture-item .children-brand a p .price, li.furniture-item .furniture-brand a p .price, li.furniture-item .sport-brand a p .price, li.sport-item .children-brand a p .price, li.sport-item .furniture-brand a p .price, li.sport-item .sport-brand a p .price {
+  font-size: 30px;
+}
+li.children-item:hover, li.furniture-item:hover, li.sport-item:hover {
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+  transform: translateY(-8px);
+}
+li.children-item:hover .children-brand h4, li.children-item:hover .furniture-brand h4, li.children-item:hover .sport-brand h4, li.furniture-item:hover .children-brand h4, li.furniture-item:hover .furniture-brand h4, li.furniture-item:hover .sport-brand h4, li.sport-item:hover .children-brand h4, li.sport-item:hover .furniture-brand h4, li.sport-item:hover .sport-brand h4 {
+  color: #d92670;
+}
+
+.children-more, .furniture-more, .sport-more {
+  border-top: 1px solid #d7d7d7;
+  position: absolute;
+  bottom: 0px;
+  left: 5%;
+  margin: 0px auto;
+  padding: 0px;
+  width: 90%;
+  height: 35px;
+  overflow: hidden;
+  text-align: right;
+}
+.children-more a, .furniture-more a, .sport-more a {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  height: 30px;
+  overflow: hidden;
+}
+.children-more a p, .furniture-more a p, .sport-more a p {
+  position: relative;
+  display: inline-block;
+  padding: 0px 5px 0px 20px;
+  margin-top: 5px;
+  overflow: hidden;
+  font-weight: 100;
+  font-size: 16px;
+  color: #aaa;
+  transition: 0.3s;
+}
+.children-more a:hover p, .furniture-more a:hover p, .sport-more a:hover p {
+  color: #000;
+}
+
+.area-hashtag {
+  display: block;
+}
+.area-hashtag dl.hashtag-box {
+  position: relative;
+  display: block;
+  margin: 0px auto;
+  padding: 50px 0px 10px;
+  width: 1220px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+}
+.area-hashtag dl.hashtag-box dt {
+  display: inline-block;
+  float: left;
+  margin: 0px;
+  padding: 10px;
+}
+.area-hashtag dl.hashtag-box dd {
+  margin-left: 105px;
+  display: block;
+}
+.area-hashtag dl.hashtag-box dd strong {
+  float: left;
+  display: inline-block;
+  margin: 0px 10px 10px 0px;
+  font-weight: normal;
+}
+.area-hashtag dl.hashtag-box dd strong a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 0px 1px rgba(100, 100, 100, 0.2);
+  text-decoration: none;
+}
+.area-hashtag dl.hashtag-box dd strong a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 0px 1px rgba(0, 0, 0, 0.2);
+}
+.area-hashtag dl.hashtag-box dd strong a span {
+  color: #000;
+}
+.area-hashtag dl.hashtag-box dd strong a span:before {
+  content: "#";
+}
+
+.footer {
+  text-align: center;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  top: 100px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  html, body {
+    background-color: #fbcfe0;
+  }
+
+  .bg-repeat-bg, .bg-ballon, .bg-cloud-edge, .bg-bottom, .bg-title-bg {
+    display: none;
+  }
+
+  .wrapper-articlelist {
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .pc-mt {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+  }
+  .pc-mt .event-banner-pic {
+    z-index: 5;
+    display: block;
+    position: relative;
+    vertical-align: top;
+    margin: 0px;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: auto;
+  }
+  .pc-mt .event-banner-pic picture {
+    background-color: #fbcfe0;
+    margin: 0px;
+    padding: 0px;
+  }
+  .pc-mt .event-banner-pic picture img {
+    margin: 0px;
+    width: 100%;
+  }
+  .pc-mt .ballon-updown, .pc-mt .snow {
+    display: none;
+  }
+
+  .right-nav-fixed {
+    display: none;
+  }
+
+  .area-hot, .area-brand {
+    margin-top: 0px;
+  }
+  .area-hot .hot-title, .area-hot .brand-title, .area-brand .hot-title, .area-brand .brand-title {
+    display: block;
+    position: relative;
+    vertical-align: top;
+    margin: 0px;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+  }
+  .area-hot .hot-title picture, .area-hot .brand-title picture, .area-brand .hot-title picture, .area-brand .brand-title picture {
+    background-color: #fbcfe0;
+  }
+  .area-hot .hot-title picture img, .area-hot .brand-title picture img, .area-brand .hot-title picture img, .area-brand .brand-title picture img {
+    margin: 0px auto;
+    width: 100%;
+  }
+
+  .area-hot {
+    height: auto;
+  }
+  .area-hot .ul-block {
+    position: relative;
+    background-color: #fbcfe0;
+    min-width: 414px;
+  }
+  .area-hot .ul-block ul.hot-pics {
+    position: relative;
+    background-color: #fbcfe0;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+  }
+  .area-hot .ul-block ul.hot-pics li.hot {
+    float: left;
+    display: inline-block;
+    width: 48%;
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+  .area-hot .ul-block ul.hot-pics li.hot a img.hot {
+    width: 100%;
+  }
+
+  .area-brand {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    background-color: #fbcfe0;
+    margin-top: -1vw;
+    padding-bottom: 50px;
+  }
+  .area-brand .brand-title {
+    margin: 0px auto;
+    padding: 0px;
+    width: 100%;
+  }
+
+  ul.brand {
+    position: relative;
+    background-color: #fbcfe0;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+  }
+  ul.brand li.brand {
+    list-style: none;
+    float: left;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #e55f92;
+    width: 48%;
+    height: auto;
+    margin: 1%;
+    padding: 0px;
+    text-align: center;
+  }
+  ul.brand li.brand .B-img a img {
+    width: 100%;
+  }
+  ul.brand li.brand .B-logo {
+    width: 80%;
+    background-color: #fff;
+    border-radius: 50px;
+    left: 10%;
+  }
+  ul.brand li.brand .B-logo a img {
+    height: 30px;
+    box-shadow: none;
+  }
+  ul.brand li.brand .B-slogan a {
+    font-size: 16px;
+  }
+  ul.brand li.brand .B-go {
+    background-color: #901f4a;
+  }
+
+  .area-today, .area-hotsale {
+    position: relative;
+    text-align: center;
+  }
+  .area-today .today-title-bg, .area-today .hotsale-title-bg, .area-hotsale .today-title-bg, .area-hotsale .hotsale-title-bg {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .area-today .today-title-bg img, .area-today .hotsale-title-bg img, .area-hotsale .today-title-bg img, .area-hotsale .hotsale-title-bg img {
+    width: 100%;
+  }
+  .area-today .today-title-bg ul.today, .area-today .today-title-bg ul.hotsale, .area-today .hotsale-title-bg ul.today, .area-today .hotsale-title-bg ul.hotsale, .area-hotsale .today-title-bg ul.today, .area-hotsale .today-title-bg ul.hotsale, .area-hotsale .hotsale-title-bg ul.today, .area-hotsale .hotsale-title-bg ul.hotsale {
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  .area-today .today-title-bg ul.today li.today-big, .area-today .today-title-bg ul.today li.hotsale-big, .area-today .today-title-bg ul.today li.today, .area-today .today-title-bg ul.today li.hotsale, .area-today .today-title-bg ul.hotsale li.today-big, .area-today .today-title-bg ul.hotsale li.hotsale-big, .area-today .today-title-bg ul.hotsale li.today, .area-today .today-title-bg ul.hotsale li.hotsale, .area-today .hotsale-title-bg ul.today li.today-big, .area-today .hotsale-title-bg ul.today li.hotsale-big, .area-today .hotsale-title-bg ul.today li.today, .area-today .hotsale-title-bg ul.today li.hotsale, .area-today .hotsale-title-bg ul.hotsale li.today-big, .area-today .hotsale-title-bg ul.hotsale li.hotsale-big, .area-today .hotsale-title-bg ul.hotsale li.today, .area-today .hotsale-title-bg ul.hotsale li.hotsale, .area-hotsale .today-title-bg ul.today li.today-big, .area-hotsale .today-title-bg ul.today li.hotsale-big, .area-hotsale .today-title-bg ul.today li.today, .area-hotsale .today-title-bg ul.today li.hotsale, .area-hotsale .today-title-bg ul.hotsale li.today-big, .area-hotsale .today-title-bg ul.hotsale li.hotsale-big, .area-hotsale .today-title-bg ul.hotsale li.today, .area-hotsale .today-title-bg ul.hotsale li.hotsale, .area-hotsale .hotsale-title-bg ul.today li.today-big, .area-hotsale .hotsale-title-bg ul.today li.hotsale-big, .area-hotsale .hotsale-title-bg ul.today li.today, .area-hotsale .hotsale-title-bg ul.today li.hotsale, .area-hotsale .hotsale-title-bg ul.hotsale li.today-big, .area-hotsale .hotsale-title-bg ul.hotsale li.hotsale-big, .area-hotsale .hotsale-title-bg ul.hotsale li.today, .area-hotsale .hotsale-title-bg ul.hotsale li.hotsale {
+    position: relative;
+    float: right;
+    display: inline-block;
+    background-color: #fff;
+    width: 40%;
+    height: 100%;
+    margin: 5%;
+  }
+  .area-today .today-title-bg ul.today li.today-big a, .area-today .today-title-bg ul.today li.hotsale-big a, .area-today .today-title-bg ul.today li.today a, .area-today .today-title-bg ul.today li.hotsale a, .area-today .today-title-bg ul.hotsale li.today-big a, .area-today .today-title-bg ul.hotsale li.hotsale-big a, .area-today .today-title-bg ul.hotsale li.today a, .area-today .today-title-bg ul.hotsale li.hotsale a, .area-today .hotsale-title-bg ul.today li.today-big a, .area-today .hotsale-title-bg ul.today li.hotsale-big a, .area-today .hotsale-title-bg ul.today li.today a, .area-today .hotsale-title-bg ul.today li.hotsale a, .area-today .hotsale-title-bg ul.hotsale li.today-big a, .area-today .hotsale-title-bg ul.hotsale li.hotsale-big a, .area-today .hotsale-title-bg ul.hotsale li.today a, .area-today .hotsale-title-bg ul.hotsale li.hotsale a, .area-hotsale .today-title-bg ul.today li.today-big a, .area-hotsale .today-title-bg ul.today li.hotsale-big a, .area-hotsale .today-title-bg ul.today li.today a, .area-hotsale .today-title-bg ul.today li.hotsale a, .area-hotsale .today-title-bg ul.hotsale li.today-big a, .area-hotsale .today-title-bg ul.hotsale li.hotsale-big a, .area-hotsale .today-title-bg ul.hotsale li.today a, .area-hotsale .today-title-bg ul.hotsale li.hotsale a, .area-hotsale .hotsale-title-bg ul.today li.today-big a, .area-hotsale .hotsale-title-bg ul.today li.hotsale-big a, .area-hotsale .hotsale-title-bg ul.today li.today a, .area-hotsale .hotsale-title-bg ul.today li.hotsale a, .area-hotsale .hotsale-title-bg ul.hotsale li.today-big a, .area-hotsale .hotsale-title-bg ul.hotsale li.hotsale-big a, .area-hotsale .hotsale-title-bg ul.hotsale li.today a, .area-hotsale .hotsale-title-bg ul.hotsale li.hotsale a {
+    display: block;
+  }
+  .area-today .today-title-bg ul.today li.today-big a img, .area-today .today-title-bg ul.today li.hotsale-big a img, .area-today .today-title-bg ul.today li.today a img, .area-today .today-title-bg ul.today li.hotsale a img, .area-today .today-title-bg ul.hotsale li.today-big a img, .area-today .today-title-bg ul.hotsale li.hotsale-big a img, .area-today .today-title-bg ul.hotsale li.today a img, .area-today .today-title-bg ul.hotsale li.hotsale a img, .area-today .hotsale-title-bg ul.today li.today-big a img, .area-today .hotsale-title-bg ul.today li.hotsale-big a img, .area-today .hotsale-title-bg ul.today li.today a img, .area-today .hotsale-title-bg ul.today li.hotsale a img, .area-today .hotsale-title-bg ul.hotsale li.today-big a img, .area-today .hotsale-title-bg ul.hotsale li.hotsale-big a img, .area-today .hotsale-title-bg ul.hotsale li.today a img, .area-today .hotsale-title-bg ul.hotsale li.hotsale a img, .area-hotsale .today-title-bg ul.today li.today-big a img, .area-hotsale .today-title-bg ul.today li.hotsale-big a img, .area-hotsale .today-title-bg ul.today li.today a img, .area-hotsale .today-title-bg ul.today li.hotsale a img, .area-hotsale .today-title-bg ul.hotsale li.today-big a img, .area-hotsale .today-title-bg ul.hotsale li.hotsale-big a img, .area-hotsale .today-title-bg ul.hotsale li.today a img, .area-hotsale .today-title-bg ul.hotsale li.hotsale a img, .area-hotsale .hotsale-title-bg ul.today li.today-big a img, .area-hotsale .hotsale-title-bg ul.today li.hotsale-big a img, .area-hotsale .hotsale-title-bg ul.today li.today a img, .area-hotsale .hotsale-title-bg ul.today li.hotsale a img, .area-hotsale .hotsale-title-bg ul.hotsale li.today-big a img, .area-hotsale .hotsale-title-bg ul.hotsale li.hotsale-big a img, .area-hotsale .hotsale-title-bg ul.hotsale li.today a img, .area-hotsale .hotsale-title-bg ul.hotsale li.hotsale a img {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+  }
+  .area-today .today-title-bg ul.today li.today-big a h3, .area-today .today-title-bg ul.today li.hotsale-big a h3, .area-today .today-title-bg ul.today li.today a h3, .area-today .today-title-bg ul.today li.hotsale a h3, .area-today .today-title-bg ul.hotsale li.today-big a h3, .area-today .today-title-bg ul.hotsale li.hotsale-big a h3, .area-today .today-title-bg ul.hotsale li.today a h3, .area-today .today-title-bg ul.hotsale li.hotsale a h3, .area-today .hotsale-title-bg ul.today li.today-big a h3, .area-today .hotsale-title-bg ul.today li.hotsale-big a h3, .area-today .hotsale-title-bg ul.today li.today a h3, .area-today .hotsale-title-bg ul.today li.hotsale a h3, .area-today .hotsale-title-bg ul.hotsale li.today-big a h3, .area-today .hotsale-title-bg ul.hotsale li.hotsale-big a h3, .area-today .hotsale-title-bg ul.hotsale li.today a h3, .area-today .hotsale-title-bg ul.hotsale li.hotsale a h3, .area-hotsale .today-title-bg ul.today li.today-big a h3, .area-hotsale .today-title-bg ul.today li.hotsale-big a h3, .area-hotsale .today-title-bg ul.today li.today a h3, .area-hotsale .today-title-bg ul.today li.hotsale a h3, .area-hotsale .today-title-bg ul.hotsale li.today-big a h3, .area-hotsale .today-title-bg ul.hotsale li.hotsale-big a h3, .area-hotsale .today-title-bg ul.hotsale li.today a h3, .area-hotsale .today-title-bg ul.hotsale li.hotsale a h3, .area-hotsale .hotsale-title-bg ul.today li.today-big a h3, .area-hotsale .hotsale-title-bg ul.today li.hotsale-big a h3, .area-hotsale .hotsale-title-bg ul.today li.today a h3, .area-hotsale .hotsale-title-bg ul.today li.hotsale a h3, .area-hotsale .hotsale-title-bg ul.hotsale li.today-big a h3, .area-hotsale .hotsale-title-bg ul.hotsale li.hotsale-big a h3, .area-hotsale .hotsale-title-bg ul.hotsale li.today a h3, .area-hotsale .hotsale-title-bg ul.hotsale li.hotsale a h3 {
+    margin: 0px;
+    padding: 0px 10px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    background: #fff;
+  }
+  .area-today .today-title-bg ul.today li.today-big a h4, .area-today .today-title-bg ul.today li.hotsale-big a h4, .area-today .today-title-bg ul.today li.today a h4, .area-today .today-title-bg ul.today li.hotsale a h4, .area-today .today-title-bg ul.hotsale li.today-big a h4, .area-today .today-title-bg ul.hotsale li.hotsale-big a h4, .area-today .today-title-bg ul.hotsale li.today a h4, .area-today .today-title-bg ul.hotsale li.hotsale a h4, .area-today .hotsale-title-bg ul.today li.today-big a h4, .area-today .hotsale-title-bg ul.today li.hotsale-big a h4, .area-today .hotsale-title-bg ul.today li.today a h4, .area-today .hotsale-title-bg ul.today li.hotsale a h4, .area-today .hotsale-title-bg ul.hotsale li.today-big a h4, .area-today .hotsale-title-bg ul.hotsale li.hotsale-big a h4, .area-today .hotsale-title-bg ul.hotsale li.today a h4, .area-today .hotsale-title-bg ul.hotsale li.hotsale a h4, .area-hotsale .today-title-bg ul.today li.today-big a h4, .area-hotsale .today-title-bg ul.today li.hotsale-big a h4, .area-hotsale .today-title-bg ul.today li.today a h4, .area-hotsale .today-title-bg ul.today li.hotsale a h4, .area-hotsale .today-title-bg ul.hotsale li.today-big a h4, .area-hotsale .today-title-bg ul.hotsale li.hotsale-big a h4, .area-hotsale .today-title-bg ul.hotsale li.today a h4, .area-hotsale .today-title-bg ul.hotsale li.hotsale a h4, .area-hotsale .hotsale-title-bg ul.today li.today-big a h4, .area-hotsale .hotsale-title-bg ul.today li.hotsale-big a h4, .area-hotsale .hotsale-title-bg ul.today li.today a h4, .area-hotsale .hotsale-title-bg ul.today li.hotsale a h4, .area-hotsale .hotsale-title-bg ul.hotsale li.today-big a h4, .area-hotsale .hotsale-title-bg ul.hotsale li.hotsale-big a h4, .area-hotsale .hotsale-title-bg ul.hotsale li.today a h4, .area-hotsale .hotsale-title-bg ul.hotsale li.hotsale a h4 {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 10px;
+    overflow: hidden;
+    font-weight: normal;
+    font-size: 10px;
+    text-align: center;
+    color: #000;
+  }
+  .area-today .today-title-bg ul.today li.today-big a p, .area-today .today-title-bg ul.today li.hotsale-big a p, .area-today .today-title-bg ul.today li.today a p, .area-today .today-title-bg ul.today li.hotsale a p, .area-today .today-title-bg ul.hotsale li.today-big a p, .area-today .today-title-bg ul.hotsale li.hotsale-big a p, .area-today .today-title-bg ul.hotsale li.today a p, .area-today .today-title-bg ul.hotsale li.hotsale a p, .area-today .hotsale-title-bg ul.today li.today-big a p, .area-today .hotsale-title-bg ul.today li.hotsale-big a p, .area-today .hotsale-title-bg ul.today li.today a p, .area-today .hotsale-title-bg ul.today li.hotsale a p, .area-today .hotsale-title-bg ul.hotsale li.today-big a p, .area-today .hotsale-title-bg ul.hotsale li.hotsale-big a p, .area-today .hotsale-title-bg ul.hotsale li.today a p, .area-today .hotsale-title-bg ul.hotsale li.hotsale a p, .area-hotsale .today-title-bg ul.today li.today-big a p, .area-hotsale .today-title-bg ul.today li.hotsale-big a p, .area-hotsale .today-title-bg ul.today li.today a p, .area-hotsale .today-title-bg ul.today li.hotsale a p, .area-hotsale .today-title-bg ul.hotsale li.today-big a p, .area-hotsale .today-title-bg ul.hotsale li.hotsale-big a p, .area-hotsale .today-title-bg ul.hotsale li.today a p, .area-hotsale .today-title-bg ul.hotsale li.hotsale a p, .area-hotsale .hotsale-title-bg ul.today li.today-big a p, .area-hotsale .hotsale-title-bg ul.today li.hotsale-big a p, .area-hotsale .hotsale-title-bg ul.today li.today a p, .area-hotsale .hotsale-title-bg ul.today li.hotsale a p, .area-hotsale .hotsale-title-bg ul.hotsale li.today-big a p, .area-hotsale .hotsale-title-bg ul.hotsale li.hotsale-big a p, .area-hotsale .hotsale-title-bg ul.hotsale li.today a p, .area-hotsale .hotsale-title-bg ul.hotsale li.hotsale a p {
+    margin-top: -5px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #d92670;
+  }
+  .area-today .today-title-bg ul.today li.today-big a p del, .area-today .today-title-bg ul.today li.hotsale-big a p del, .area-today .today-title-bg ul.today li.today a p del, .area-today .today-title-bg ul.today li.hotsale a p del, .area-today .today-title-bg ul.hotsale li.today-big a p del, .area-today .today-title-bg ul.hotsale li.hotsale-big a p del, .area-today .today-title-bg ul.hotsale li.today a p del, .area-today .today-title-bg ul.hotsale li.hotsale a p del, .area-today .hotsale-title-bg ul.today li.today-big a p del, .area-today .hotsale-title-bg ul.today li.hotsale-big a p del, .area-today .hotsale-title-bg ul.today li.today a p del, .area-today .hotsale-title-bg ul.today li.hotsale a p del, .area-today .hotsale-title-bg ul.hotsale li.today-big a p del, .area-today .hotsale-title-bg ul.hotsale li.hotsale-big a p del, .area-today .hotsale-title-bg ul.hotsale li.today a p del, .area-today .hotsale-title-bg ul.hotsale li.hotsale a p del, .area-hotsale .today-title-bg ul.today li.today-big a p del, .area-hotsale .today-title-bg ul.today li.hotsale-big a p del, .area-hotsale .today-title-bg ul.today li.today a p del, .area-hotsale .today-title-bg ul.today li.hotsale a p del, .area-hotsale .today-title-bg ul.hotsale li.today-big a p del, .area-hotsale .today-title-bg ul.hotsale li.hotsale-big a p del, .area-hotsale .today-title-bg ul.hotsale li.today a p del, .area-hotsale .today-title-bg ul.hotsale li.hotsale a p del, .area-hotsale .hotsale-title-bg ul.today li.today-big a p del, .area-hotsale .hotsale-title-bg ul.today li.hotsale-big a p del, .area-hotsale .hotsale-title-bg ul.today li.today a p del, .area-hotsale .hotsale-title-bg ul.today li.hotsale a p del, .area-hotsale .hotsale-title-bg ul.hotsale li.today-big a p del, .area-hotsale .hotsale-title-bg ul.hotsale li.hotsale-big a p del, .area-hotsale .hotsale-title-bg ul.hotsale li.today a p del, .area-hotsale .hotsale-title-bg ul.hotsale li.hotsale a p del {
+    font-size: 8px;
+    color: #5e5e5e;
+    padding-right: 5px;
+  }
+  .area-today .today-title-bg ul.today li.today-big a p b, .area-today .today-title-bg ul.today li.today-big a p .money, .area-today .today-title-bg ul.today li.hotsale-big a p b, .area-today .today-title-bg ul.today li.hotsale-big a p .money, .area-today .today-title-bg ul.today li.today a p b, .area-today .today-title-bg ul.today li.today a p .money, .area-today .today-title-bg ul.today li.hotsale a p b, .area-today .today-title-bg ul.today li.hotsale a p .money, .area-today .today-title-bg ul.hotsale li.today-big a p b, .area-today .today-title-bg ul.hotsale li.today-big a p .money, .area-today .today-title-bg ul.hotsale li.hotsale-big a p b, .area-today .today-title-bg ul.hotsale li.hotsale-big a p .money, .area-today .today-title-bg ul.hotsale li.today a p b, .area-today .today-title-bg ul.hotsale li.today a p .money, .area-today .today-title-bg ul.hotsale li.hotsale a p b, .area-today .today-title-bg ul.hotsale li.hotsale a p .money, .area-today .hotsale-title-bg ul.today li.today-big a p b, .area-today .hotsale-title-bg ul.today li.today-big a p .money, .area-today .hotsale-title-bg ul.today li.hotsale-big a p b, .area-today .hotsale-title-bg ul.today li.hotsale-big a p .money, .area-today .hotsale-title-bg ul.today li.today a p b, .area-today .hotsale-title-bg ul.today li.today a p .money, .area-today .hotsale-title-bg ul.today li.hotsale a p b, .area-today .hotsale-title-bg ul.today li.hotsale a p .money, .area-today .hotsale-title-bg ul.hotsale li.today-big a p b, .area-today .hotsale-title-bg ul.hotsale li.today-big a p .money, .area-today .hotsale-title-bg ul.hotsale li.hotsale-big a p b, .area-today .hotsale-title-bg ul.hotsale li.hotsale-big a p .money, .area-today .hotsale-title-bg ul.hotsale li.today a p b, .area-today .hotsale-title-bg ul.hotsale li.today a p .money, .area-today .hotsale-title-bg ul.hotsale li.hotsale a p b, .area-today .hotsale-title-bg ul.hotsale li.hotsale a p .money, .area-hotsale .today-title-bg ul.today li.today-big a p b, .area-hotsale .today-title-bg ul.today li.today-big a p .money, .area-hotsale .today-title-bg ul.today li.hotsale-big a p b, .area-hotsale .today-title-bg ul.today li.hotsale-big a p .money, .area-hotsale .today-title-bg ul.today li.today a p b, .area-hotsale .today-title-bg ul.today li.today a p .money, .area-hotsale .today-title-bg ul.today li.hotsale a p b, .area-hotsale .today-title-bg ul.today li.hotsale a p .money, .area-hotsale .today-title-bg ul.hotsale li.today-big a p b, .area-hotsale .today-title-bg ul.hotsale li.today-big a p .money, .area-hotsale .today-title-bg ul.hotsale li.hotsale-big a p b, .area-hotsale .today-title-bg ul.hotsale li.hotsale-big a p .money, .area-hotsale .today-title-bg ul.hotsale li.today a p b, .area-hotsale .today-title-bg ul.hotsale li.today a p .money, .area-hotsale .today-title-bg ul.hotsale li.hotsale a p b, .area-hotsale .today-title-bg ul.hotsale li.hotsale a p .money, .area-hotsale .hotsale-title-bg ul.today li.today-big a p b, .area-hotsale .hotsale-title-bg ul.today li.today-big a p .money, .area-hotsale .hotsale-title-bg ul.today li.hotsale-big a p b, .area-hotsale .hotsale-title-bg ul.today li.hotsale-big a p .money, .area-hotsale .hotsale-title-bg ul.today li.today a p b, .area-hotsale .hotsale-title-bg ul.today li.today a p .money, .area-hotsale .hotsale-title-bg ul.today li.hotsale a p b, .area-hotsale .hotsale-title-bg ul.today li.hotsale a p .money, .area-hotsale .hotsale-title-bg ul.hotsale li.today-big a p b, .area-hotsale .hotsale-title-bg ul.hotsale li.today-big a p .money, .area-hotsale .hotsale-title-bg ul.hotsale li.hotsale-big a p b, .area-hotsale .hotsale-title-bg ul.hotsale li.hotsale-big a p .money, .area-hotsale .hotsale-title-bg ul.hotsale li.today a p b, .area-hotsale .hotsale-title-bg ul.hotsale li.today a p .money, .area-hotsale .hotsale-title-bg ul.hotsale li.hotsale a p b, .area-hotsale .hotsale-title-bg ul.hotsale li.hotsale a p .money {
+    font-weight: bold;
+  }
+  .area-today .today-title-bg ul.today li.today-big a p .price, .area-today .today-title-bg ul.today li.hotsale-big a p .price, .area-today .today-title-bg ul.today li.today a p .price, .area-today .today-title-bg ul.today li.hotsale a p .price, .area-today .today-title-bg ul.hotsale li.today-big a p .price, .area-today .today-title-bg ul.hotsale li.hotsale-big a p .price, .area-today .today-title-bg ul.hotsale li.today a p .price, .area-today .today-title-bg ul.hotsale li.hotsale a p .price, .area-today .hotsale-title-bg ul.today li.today-big a p .price, .area-today .hotsale-title-bg ul.today li.hotsale-big a p .price, .area-today .hotsale-title-bg ul.today li.today a p .price, .area-today .hotsale-title-bg ul.today li.hotsale a p .price, .area-today .hotsale-title-bg ul.hotsale li.today-big a p .price, .area-today .hotsale-title-bg ul.hotsale li.hotsale-big a p .price, .area-today .hotsale-title-bg ul.hotsale li.today a p .price, .area-today .hotsale-title-bg ul.hotsale li.hotsale a p .price, .area-hotsale .today-title-bg ul.today li.today-big a p .price, .area-hotsale .today-title-bg ul.today li.hotsale-big a p .price, .area-hotsale .today-title-bg ul.today li.today a p .price, .area-hotsale .today-title-bg ul.today li.hotsale a p .price, .area-hotsale .today-title-bg ul.hotsale li.today-big a p .price, .area-hotsale .today-title-bg ul.hotsale li.hotsale-big a p .price, .area-hotsale .today-title-bg ul.hotsale li.today a p .price, .area-hotsale .today-title-bg ul.hotsale li.hotsale a p .price, .area-hotsale .hotsale-title-bg ul.today li.today-big a p .price, .area-hotsale .hotsale-title-bg ul.today li.hotsale-big a p .price, .area-hotsale .hotsale-title-bg ul.today li.today a p .price, .area-hotsale .hotsale-title-bg ul.today li.hotsale a p .price, .area-hotsale .hotsale-title-bg ul.hotsale li.today-big a p .price, .area-hotsale .hotsale-title-bg ul.hotsale li.hotsale-big a p .price, .area-hotsale .hotsale-title-bg ul.hotsale li.today a p .price, .area-hotsale .hotsale-title-bg ul.hotsale li.hotsale a p .price {
+    font-size: 15px;
+    margin-left: 5px;
+  }
+  .area-today .today-title-bg ul.today li.today-big, .area-today .today-title-bg ul.today li.hotsale-big, .area-today .today-title-bg ul.hotsale li.today-big, .area-today .today-title-bg ul.hotsale li.hotsale-big, .area-today .hotsale-title-bg ul.today li.today-big, .area-today .hotsale-title-bg ul.today li.hotsale-big, .area-today .hotsale-title-bg ul.hotsale li.today-big, .area-today .hotsale-title-bg ul.hotsale li.hotsale-big, .area-hotsale .today-title-bg ul.today li.today-big, .area-hotsale .today-title-bg ul.today li.hotsale-big, .area-hotsale .today-title-bg ul.hotsale li.today-big, .area-hotsale .today-title-bg ul.hotsale li.hotsale-big, .area-hotsale .hotsale-title-bg ul.today li.today-big, .area-hotsale .hotsale-title-bg ul.today li.hotsale-big, .area-hotsale .hotsale-title-bg ul.hotsale li.today-big, .area-hotsale .hotsale-title-bg ul.hotsale li.hotsale-big {
+    margin-left: 55%;
+  }
+
+  .area-today {
+    background-color: #56c6ca;
+  }
+
+  .area-hotsale {
+    background-color: #dfc7ad;
+  }
+
+  .swiper-slideshow {
+    background-color: #fbcfe0;
+    position: relative;
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+  }
+  .swiper-slideshow .swiper-wrapper {
+    position: relative;
+  }
+  .swiper-slideshow .swiper-wrapper .swiper-pics {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slideshow .swiper-wrapper .swiper-pics img {
+    width: 100%;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+}
+@keyframes updown_ani {
+  0% {
+    transform: translate(0, -20px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+@keyframes kaiten {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  75% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

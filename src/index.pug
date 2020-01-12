@@ -1,0 +1,907 @@
+header#header_index
+  .bg-repeat-bg
+  .bg-ballon
+  .bg-cloud-edge
+  .bg-bottom
+  a.go-top(href='#header_index') TOP
+  div.main(align="center")
+    .bg-title-bg
+    .wrapper-articlelist
+      //- .bg_pic01
+      //右側fixed導覽---------------------------------------
+      .right-nav-fixed
+        .block-feedback
+          img.feedback-pic(src="https://img1.momoshop.com.tw/ecm/img/online/10/007/29/365/images/fixed_Area_top.png?t=1577702402007", alt="")
+        ul.fixedbox-01
+          li.nav-slide
+            a(href='#area-hot')
+              .click-area 年度熱銷
+          li.nav-slide
+            a(href='#area-brand')
+              .click-area 超級強牌
+          li.nav-slide
+            a(href='#area-today')
+              .click-area 今日最強檔
+          li.nav-slide
+            a(href='#area-hot')
+              .click-area 超人氣特銷
+          li.nav-slide
+            a(href='#area-children')
+              .click-area 婦幼用品
+          li.nav-slide
+            a(href='#area-furniture')
+              .click-area 傢俱寢飾
+          li.nav-slide
+            a(href='#area-sport')
+              .click-area 運動休閒
+        .back-to-top
+          a(href='#header_index')
+            .block-for-top
+              .radius-block TOP
+      //右側fixed導覽列---------------------------------------
+      //- LOGO、banner圖片、熱氣球、雪花
+      .logo-pic
+        a(href="https://www.momoshop.com.tw/main/Main.jsp" target="_blank")
+          img(src="https://img1.momoshop.com.tw/ecm/img/online/10/007/29/365/images/momo_logo.png?t=1577700982343", alt="momologo")
+      .pc-mt
+        .event-banner-pic
+          picture
+            source(srcset='https://img1.momoshop.com.tw/ecm/img/online/10/007/29/365/images/title01.png?t=1577702402007', media='(min-width: 768px)')
+            source(srcset='https://img1.momoshop.com.tw/ecm/img/online/10/007/28/762/images/mo_top.jpg?t=1578536513812', media='(max-width: 768px)')
+            img(src='https://img1.momoshop.com.tw/ecm/img/online/10/007/29/365/images/title01.png?t=1577702402007', alt='My default image')
+        .ballon-updown
+          img.ballon(src="https://img2.momoshop.com.tw/ecm/img/online/10/007/29/365/images/title_02.png?t=1577702402007", alt="")
+        .snow
+          .snow-1
+            img(src="https://img4.momoshop.com.tw/ecm/img/online/10/007/29/365/images/flower.png?t=1577702402007", alt="")
+          .snow-2
+            img(src="https://img4.momoshop.com.tw/ecm/img/online/10/007/29/365/images/flower.png?t=1577702402007", alt="")
+          .snow-3
+            img(src="https://img4.momoshop.com.tw/ecm/img/online/10/007/29/365/images/flower.png?t=1577702402007", alt="")
+        //- LOGO、banner圖片、熱氣球、雪花
+    //- 熱銷主打hover上浮+超連結
+    .area-hot#area-hot
+      .hot-title
+        picture
+          source(srcset='https://img3.momoshop.com.tw/ecm/img/online/10/007/29/365/images/pc_swiper00.png?t=1577702402007', media='(min-width: 768px)')
+          source(srcset='https://img2.momoshop.com.tw/ecm/img/online/10/007/28/762/images/mo_swiper00.jpg?t=1578625202735', media='(max-width: 768px)')
+          img(src='https://img3.momoshop.com.tw/ecm/img/online/10/007/29/365/images/pc_swiper00.png?t=1577702402007', alt='My default image')
+      .ul-block
+        ul.hot-pics
+          li.hot
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4800600514&p_orderType=1" target="_blank")
+              img.hot(src="https://img4.momoshop.com.tw/ecm/img/online/10/007/29/365/images/toppd01.png?t=1577702402007", alt="")
+          li.hot
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1802300064&p_orderType=1" target="_blank")
+              img.hot(src="https://img4.momoshop.com.tw/ecm/img/online/10/007/29/365/images/toppd02.png?t=1577702402007", alt="")
+          li.hot
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=5000400418&p_orderType=1" target="_blank")
+              img.hot(src="https://img2.momoshop.com.tw/ecm/img/online/10/007/29/365/images/toppd03.png?t=1577702402007", alt="")
+          li.hot
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=5000800404&p_orderType=1" target="_blank")
+              img.hot(src="https://img3.momoshop.com.tw/ecm/img/online/10/007/29/365/images/toppd04.png?t=1577702402007", alt="")
+          li.hot
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2704400016&p_orderType=1" target="_blank")
+              img.hot(src="https://img1.momoshop.com.tw/ecm/img/online/10/007/29/365/images/toppd05.png?t=1577702402007", alt="")
+          li.hot
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2704000161&p_orderType=1" target="_blank")
+              img.hot(src="https://img4.momoshop.com.tw/ecm/img/online/10/007/29/365/images/toppd06.png?t=1577702402007", alt="")
+    //- 熱銷主打hover上浮+超連結
+    //- 輪播幻燈片
+    .swiper-container.swiper-slideshow
+      .swiper-wrapper
+        .swiper-slide.swiper-pics
+          a(href="https://www.momoshop.com.tw/edm/cmmedm.jsp?lpn=O2oD6Mxlhxv&n=1" target="_blank")
+            img(src="https://img4.momoshop.com.tw/ecm/img/online/10/007/28/759/images/1220x300.jpg?t=1577959803529", alt="")
+        .swiper-slide.swiper-pics
+          a(href="https://www.momoshop.com.tw/edm/cmmedm.jsp?lpn=O3VdKXCWtH1&n=1" target="_blank")
+            img(src="https://img4.momoshop.com.tw/ecm/img/online/10/007/28/759/images/1220x300-4.jpg?t=1577959803529", alt="")
+        .swiper-slide.swiper-pics
+          a(href="https://www.momoshop.com.tw/edm/cmmedm.jsp?lpn=O2k7FEMqgPt&n=1" target="_blank")
+            img(src="https://img1.momoshop.com.tw/ecm/img/online/10/007/28/759/images/1220x300-5.jpg?t=1577959803529", alt="")
+        .swiper-slide.swiper-pics
+          a(href="https://www.momoshop.com.tw/edm/cmmedm.jsp?lpn=O3X5wAMD2kg&n=1" target="_blank")
+            img(src="https://img4.momoshop.com.tw/ecm/img/online/10/007/28/759/images/1220x300-2.jpg?t=1577959803529", alt="")
+        .swiper-slide.swiper-pics
+          a(href="https://www.momoshop.com.tw/edm/cmmedm.jsp?lpn=O3TobedaR0b&n=1" target="_blank")
+            img(src="https://img3.momoshop.com.tw/ecm/img/online/10/007/28/759/images/1220x300-3.jpg?t=1577959803529", alt="")
+        .swiper-slide.swiper-pics
+          a(href="https://www.momoshop.com.tw/edm/cmmedm.jsp?lpn=O2oCFsbV12G&n=1" target="_blank")
+            img(src="https://img4.momoshop.com.tw/ecm/img/online/10/007/28/759/images/1220x300-6.jpg?t=1577959803529", alt="")
+      .swiper-pagination
+      .swiper-button-next
+      .swiper-button-prev
+    //- 輪播幻燈片
+    //- 超強品牌
+    .area-brand#area-brand
+      .brand-title
+        picture
+          source(srcset='https://img3.momoshop.com.tw/ecm/img/online/10/007/28/765/images/pc_layout01.png?t=1577961002418', media='(min-width: 768px)')
+          source(srcset='https://img2.momoshop.com.tw/ecm/img/online/10/007/28/762/images/mo_layout01.jpg?t=1578625202735', media='(max-width: 768px)')
+          img(src="https://img3.momoshop.com.tw/ecm/img/online/10/007/28/765/images/pc_layout01.png?t=1577961002418", alt="")
+      ul.brand
+        li.brand
+          .B-img
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1800800306&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0005/992/960/5992960_L.jpg?t=1577961002418", alt="")
+          .B-logo
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1800800306&p_orderType=1" target="_blank")
+              img(src="https://img4.momoshop.com.tw/ecm/img/online/10/007/28/765/images/ihouse.jpg?t=1577961002418", alt="")
+          .B-slogan
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1800800306&p_orderType=1" target="_blank") 收納書桌100cm
+          .B-go
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1800800306&p_orderType=1" target="_blank") 年終大促5折up
+        li.brand
+          .B-img
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4800103001&p_orderType=1" target="_blank")
+              img(src="https://img2.momoshop.com.tw/ecm/img/online/10/007/28/765/images/4703465.jpg?t=1577961002418", alt="")
+          .B-logo
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4800103001&p_orderType=1" target="_blank")
+              img(src="https://img4.momoshop.com.tw/ecm/img/online/10/007/28/765/images/RQPOLO.jpg?t=1577961002418", alt="")
+          .B-slogan
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4800103001&p_orderType=1" target="_blank") 好眠床寢5折up
+          .B-go
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4800103001&p_orderType=1" target="_blank") 指定品送好禮
+        li.brand
+          .B-img
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2130400018&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0007/255/293/7255293_L.jpg?t=1577961002418", alt="")
+          .B-logo
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2130400018&p_orderType=1" target="_blank")
+              img(src="https://img4.momoshop.com.tw/ecm/img/online/10/007/28/762/images/OSIM.jpg?t=1578625202735", alt="")
+          .B-slogan
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2130400018&p_orderType=1" target="_blank") 腿樂樂+背樂樂
+          .B-go
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2130400018&p_orderType=1" target="_blank") momo限定超值組
+        li.brand
+          .B-img
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2135900050&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0006/866/922/6866922_L.jpg?t=1578625202735", alt="")
+          .B-logo
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2135900050&p_orderType=1" target="_blank")
+              img(src="https://img4.momoshop.com.tw/ecm/img/online/10/007/28/762/images/GIANT.jpg?t=1578625202735", alt="")
+          .B-slogan
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2135900050&p_orderType=1" target="_blank") 時尚經典電動車
+          .B-go
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2135900050&p_orderType=1" target="_blank") ★享政府補助
+      ul.brand
+        li.brand
+          .B-img
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2700400577&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/ecm/img/online/10/007/28/765/images/7298089.jpg?t=1577961002418", alt="")
+          .B-logo
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2700400577&p_orderType=1" target="_blank")
+              img(src="https://img2.momoshop.com.tw/ecm/img/online/10/007/28/765/images/huggies.jpg?t=1577961002418", alt="")
+          .B-slogan
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2700400577&p_orderType=1" target="_blank") 新裸感黏貼皇家版M-L
+          .B-go
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2700400577&p_orderType=1" target="_blank") 滿5888贈濕巾一箱
+        li.brand
+          .B-img
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2700201100&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0005/890/977/5890977_L.jpg?t=1577961002418", alt="")
+          .B-logo
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2700201100&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/ecm/img/online/10/007/28/765/images/Aprica.jpg?t=1577961002418", alt="")
+          .B-slogan
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2700201100&p_orderType=1" target="_blank") 指定商品滿1500
+          .B-go
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2700201100&p_orderType=1" target="_blank") 抽東京來回機票
+        li.brand
+          .B-img
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1800600210&p_orderType=4" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0002/537/356/2537356_L.jpg?t=1577961002418", alt="")
+          .B-logo
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1800600210&p_orderType=4" target="_blank")
+              img(src="https://img2.momoshop.com.tw/ecm/img/online/10/007/28/765/images/Akira.jpg?t=1577961002418", alt="")
+          .B-slogan
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1800600210&p_orderType=4" target="_blank") 大容量六層收納鞋櫃
+          .B-go
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1800600210&p_orderType=4" target="_blank") 除舊佈新3折up
+        li.brand
+          .B-img
+            a(href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=7151932" target="_blank")
+              img(src="https://img3.momoshop.com.tw/ecm/img/online/10/007/28/765/images/5964273--480x480.jpg?t=1577961002418", alt="")
+          .B-logo
+            a(href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=7151932" target="_blank")
+              img(src="https://img4.momoshop.com.tw/ecm/img/online/10/007/28/765/images/muji.jpg?t=1577961002418", alt="")
+          .B-slogan
+            a(href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=7151932" target="_blank") 行動無水香氛機
+          .B-go
+            a(href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=7151932" target="_blank") 限定灰色新上市
+      ul.brand
+        li.brand
+          .B-img
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=5000400160&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0005/864/112/5864112_L.jpg?t=1577961002418", alt="")
+          .B-logo
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=5000400160&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/ecm/img/online/10/007/28/765/images/5864112.jpg?t=1577961002418", alt="")
+          .B-slogan
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=5000400160&p_orderType=1" target="_blank") G4渦輪式磁控飛輪
+          .B-go
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=5000400160&p_orderType=1" target="_blank") 熱銷款聯合下殺
+        li.brand
+          .B-img
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1503100021&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0005/828/091/5828091_L.jpg?t=1577961002418", alt="")
+          .B-logo
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1503100021&p_orderType=1" target="_blank")
+              img(src="https://img2.momoshop.com.tw/ecm/img/online/10/007/28/765/images/deseno.jpg?t=1577961002418", alt="")
+          .B-slogan
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1503100021&p_orderType=1" target="_blank") 28吋酷比鋁框
+          .B-go
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1503100021&p_orderType=1" target="_blank") 熱銷回饋3折up
+        li.brand
+          .B-img
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2701800171&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0005/886/619/5886619_L.jpg?t=1577961002418", alt="")
+          .B-logo
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2701800171&p_orderType=1" target="_blank")
+              img(src="https://img2.momoshop.com.tw/ecm/img/online/10/007/28/765/images/5886619.jpg?t=1577961002418", alt="")
+          .B-slogan
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2701800171&p_orderType=1" target="_blank") 防漏成褲L-XL+看護墊
+          .B-go
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2701800171&p_orderType=1" target="_blank") momo獨家合購組
+        li.brand
+          .B-img
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2701201588&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0006/832/845/6832845_L.jpg?t=1577961002418", alt="")
+          .B-logo
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2701201588&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/ecm/img/online/10/007/28/765/images/mylogo.jpg?t=1577961002418", alt="")
+          .B-slogan
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2701201588&p_orderType=1" target="_blank") 派克聲光消防車組
+          .B-go
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2701201588&p_orderType=1" target="_blank") 任選3件88折
+    //- 超強品牌
+    //- 今日最強檔
+    .area-today#area-today
+      .today-title-bg
+        picture
+          source(srcset='https://img2.momoshop.com.tw/ecm/img/online/10/007/28/765/images/layout_1220_1f8s_04-1.png?t=1577959645201', media='(min-width: 768px)')
+          source(srcset='https://img3.momoshop.com.tw/ecm/img/online/10/007/28/762/images/layout_640_1f7s_4b_B01-1.jpg?t=1578625202735', media='(max-width: 768px)')
+          img(src="https://img2.momoshop.com.tw/ecm/img/online/10/007/28/765/images/layout_1220_1f8s_04-1.png?t=1577959645201", alt="")
+        ul.today
+          li.today-big
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1800600512&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0006/865/267/6865267_L.jpg?t=1577961002418", alt="")
+              h3 除舊佈新★獨家搶
+              h4 雙抽屜收納床頭櫃
+              p
+                del 1099
+                b 特價
+                span.money $
+                span.price 499
+          li.today
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4800100111&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0007/126/088/7126088_L.jpg?t=1578051003206", alt="")
+              h3 多款任選▼尺寸均一價
+              h4 DON純棉兩用被床罩
+              p
+                del 5380
+                b 限時
+                span.money $
+                span.price 1180
+                small /組
+          li.today
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1803100031&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0007/269/570/7269570_L.jpg?t=1578051003206", alt="")
+              h3 送保潔墊+舊床回收
+              h4 石墨烯護脊乳膠獨立筒床墊
+              p
+                del 17900
+                b 雙人
+                span.money $
+                span.price 5990
+          li.today
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4100300032&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0006/973/331/6973331_L.jpg?t=1578051003206", alt="")
+              h3 ★適用各汽/機車電瓶★
+              h4 麻新電子電瓶充電器
+              p
+                del 4475
+                b 特價
+                span.money $
+                span.price 3580
+          li.today
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1503000236&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/ecm/img/online/10/007/28/766/images/5963854.jpg?t=1578051003206", alt="")
+              h3 買大送小▼2折
+              h4 【Arowana】25+29吋鋁框
+              p
+                del 11800
+                b 特價
+                span.money $
+                span.price 2999
+          li.today
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1601700876&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0007/172/586/7172586_L.jpg?t=1578051003206", alt="")
+              h3 買一送一超值搶
+              h4 四季通用極輕保暖睡袋
+              p
+                del 1700
+                b 特價
+                span.money $
+                span.price 1111
+          li.today
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2700400409&p_orderType=1" target="_blank")
+              img(src="https://img2.momoshop.com.tw/ecm/img/online/10/007/28/766/images/6808647.jpg?t=1578051003206", alt="")
+              h3 買2箱送尿布2選1
+              h4 日本大王境內版黏貼M-XL
+              p
+                del 1999
+                b 爆殺
+                span.money $
+                span.price 1399
+                small /箱
+          li.today
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2701201442&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0007/207/921/7207921_L.jpg?t=1578051003206", alt="")
+              h3 MOMO獨家
+              h4 聲效巨型汪汪隊總部停車場組
+              p
+                del 4999
+                b 特價
+                span.money $
+                span.price 3999
+          li.today
+            a(href="https://www.momoshop.com.tw/edm/cmmedm.jsp?lpn=O3X6VoOgaae&n=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0007/030/153/7030153_L.jpg?t=1578051003206", alt="")
+              h3 透氣座布▼迎春再降
+              h4 Joie0-4歲雙向汽座
+              p
+                del 3880
+                b 折後
+                span.money $
+                span.price 3099
+                
+                
+    //- 今日最強檔
+    //- 超人氣熱銷
+    .area-hotsale#area-hotsale
+      .hotsale-title-bg
+        picture
+          source(srcset='https://img1.momoshop.com.tw/ecm/img/online/10/007/28/766/images/layout_1220_1f8s_04-2.png?t=1578049645845', media='(min-width: 768px)')
+          source(srcset='https://img3.momoshop.com.tw/ecm/img/online/10/007/28/762/images/layout_640_1f7s_4b_B01-2.jpg?t=1578625202735', media='(max-width: 768px)')
+          img(src="https://img1.momoshop.com.tw/ecm/img/online/10/007/28/766/images/layout_1220_1f8s_04-2.png?t=1578049645845", alt="")
+        ul.hotsale
+          li.hotsale-big
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1802900013&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0005/470/547/5470547_L.jpg?t=1578051003206", alt="")
+              h3 限時搶購破盤價
+              h4 H&C後仰鎖定+擱腳墊款電腦椅
+              p
+                del 3700
+                b 折後
+                span.money $
+                span.price 1780
+          li.hotsale
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4800500079&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0005/083/468/5083468_L.jpg?t=1578051003206", alt="")
+              h3 贈抑菌水洗枕1x1
+              h4 加拿大水鳥羽毛絨冬被
+              p
+                del 2999
+                b 雙人
+                span.money $
+                span.price 999
+                small 
+          li.hotsale
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1803300054&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0003/266/265/3266265_L.jpg?t=1578051003206", alt="")
+              h3 122X45X180CM
+              h4 大型耐重四層置物架
+              p
+                del 2399
+                b 特價
+                span.money $
+                span.price 999
+          li.hotsale
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4100200095&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0005/799/939/5799939_L.jpg?t=1578051003206", alt="")
+              h3 狂降▼再贈150mo幣
+              h4 WIFI雙鏡機車記錄器
+              p
+                del 6999
+                b 破盤
+                span.money $
+                span.price 3699
+          li.hotsale
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2147000012&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0007/323/028/7323028_L.jpg?t=1578051003206", alt="")
+              h3 限量搶▼獨家破盤
+              h4 【FUJI】摩術師手部按摩器
+              p
+                del 2980
+                b 折後
+                span.money $
+                span.price 1288
+          li.hotsale
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=5000400418&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0007/092/350/7092350_L.jpg?t=1578051003206", alt="")
+              h3 新色上市▼下殺62折
+              h4 【好吉康】G4二合一飛輪
+              p
+                del 6625
+                b 破盤
+                span.money $
+                span.price 4111
+          li.hotsale
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2700400451&p_orderType=1" target="_blank")
+              img(src="https://img3.momoshop.com.tw/ecm/img/online/10/007/28/766/images/5897644.jpg?t=1578051003206", alt="")
+              h3 強打★迎春直降
+              h4 moony紙尿褲S
+              p
+                del 2079
+                b 折後
+                span.money $
+                span.price 1409
+                small /箱
+          li.hotsale
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2704500055&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0002/366/897/2366897_L.jpg?t=1578051003206", alt="")
+              h3 狂銷5折▼滿額贈
+              h4 3m兒童輕冬被
+              p
+                del 7047
+                b 折後
+                span.money $
+                span.price 2980
+          li.hotsale
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2704000166&p_orderType=1" target="_blank")
+              img(src="https://img1.momoshop.com.tw/goodsimg/0007/192/944/7192944_L.jpg?t=1578051003206", alt="")
+              h3 85件豪華組
+              h4 木製軌道遊戲桌組(兩色)
+              p
+                del 5120
+                b 折後
+                span.money $
+                span.price 1999
+    //- 超人氣熱銷
+    //- 8品區域
+    .area-eight-block
+      //- 婦幼用品
+      .bg-children#area-children
+        a(href="https://www.momoshop.com.tw/category/LgrpCategory.jsp?l_code=2799900000" target="_blank")
+          .children-btn
+            h3 立刻前往
+            img(src="https://img3.momoshop.com.tw/ecm/img/online/10/007/28/762/images/btn_go.png?t=1578272401723", alt="")
+        ul.children
+          li.children-item
+            .children-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2700400056&p_orderType=1" target="_blank")
+                img(src="https://img3.momoshop.com.tw/ecm/img/online/10/007/28/762/images/6986499.jpg?t=1578272401723", alt="")
+                h3 網評激推▼限時特殺
+                h4 幫寶適超薄乾爽黏貼彩箱
+                p
+                  del 1290
+                  b 折後
+                  span.money $
+                  span.price 1189
+                  small /箱
+            .children-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2700400450&p_orderType=1" target="_blank")
+                p 看更多>
+          li.children-item
+            .children-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2701800146&p_orderType=1" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0005/356/567/5356567_L.jpg?t=1578272401723", alt="")
+                h3 momo獨家
+                h4 安安成人▼淨爽呵護型L-XL
+                p
+                  del 2500
+                  b 折後
+                  span.money $
+                  span.price 1299
+                  small /箱
+            .children-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2701800146&p_orderType=1" target="_blank")
+                p 看更多>
+          li.children-item
+            .children-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2704400016&p_orderType=1" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0007/121/945/7121945_L.jpg?t=1578272401723", alt="")
+                h3 滿額雙重送
+                h4 【生活誠品】手搖升降書桌椅組
+                p
+                  del 3980
+                  b 折後
+                  span.money $
+                  span.price 2799
+            .children-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2704400016&p_orderType=1" target="_blank")
+                p 看更多>
+          li.children-item
+            .children-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2703000184&p_orderType=1" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0006/526/355/6526355_L.jpg?t=1578272401723", alt="")
+                h3 材質升級▼限時破盤
+                h4 3M兒安防撞地墊32cm-6片
+                p
+                  del 899
+                  b 特價
+                  span.money $
+                  span.price 539
+            .children-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2703000184&p_orderType=1" target="_blank")
+                p 看更多>
+          li.children-item
+            .children-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2701201620&p_orderType=1" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0005/401/762/5401762_L.jpg?t=1578272401723", alt="")
+                h3 百萬銷售紀念版
+                h4 【TOMICA】自動停車塔 
+                p
+                  del 2410
+                  b 特價
+                  span.money $
+                  span.price 1999
+            .children-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2701201620&p_orderType=1" target="_blank")
+                p 看更多>
+          li.children-item
+            .children-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2704200055&p_orderType=1" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0006/435/251/6435251_L.jpg?t=1578272401723", alt="")
+                h3 送禮首選▼MO限定
+                h4 Hoppetta六層紗蘑菇禮袋組
+                p
+                  del 2380
+                  b 折後
+                  span.money $
+                  span.price 1850
+            .children-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2704200055&p_orderType=1" target="_blank")
+                p 看更多>
+          li.children-item
+            .children-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2704000178&p_orderType=1" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0007/256/437/7256437_L.jpg?t=1578272401723", alt="")
+                h3 滿額贈史奴比公仔
+                h4 邦寶積木 史努比旋轉樂園
+                p
+                  del 1499
+                  b 特價
+                  span.money $
+                  span.price 996
+            .children-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2704000178&p_orderType=1" target="_blank")
+                p 看更多>
+          li.children-item
+            .children-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2700400593&p_orderType=1" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0007/267/087/7267087_L.jpg?t=1578272401723", alt="")
+                h3 新貨上市
+                h4 Tino頂級柔棉4D黏貼S-XL
+                p
+                  del 1099
+                  b 特價
+                  span.money $
+                  span.price 899
+                  small /箱
+            .children-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2700400593&p_orderType=1" target="_blank")
+                p 看更多>
+      //- 婦幼用品
+      //- 傢俱寢飾
+      .bg-furniture#area-furniture
+        a(href="https://www.momoshop.com.tw/category/LgrpCategory.jsp?l_code=1899900000" target="_blank")
+          .furniture-btn
+            h3 立刻前往
+            img(src="https://img3.momoshop.com.tw/ecm/img/online/10/007/28/762/images/btn_go.png?t=1578272401723", alt="")
+        ul.furniture
+          li.furniture-item
+            .furniture-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1800600345&p_orderType=1" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0007/267/614/7267614_L.jpg?t=1578272401723", alt="")
+                h3 年終獨家★一日搶
+                h4 開放6層鞋櫃2入組
+                p
+                  del 1575
+                  b 破盤
+                  span.money $
+                  span.price 250
+                  small /入
+            .furniture-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1800600345&p_orderType=1" target="_blank")
+                p 看更多>
+          li.furniture-item
+            .furniture-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4800100111&p_orderType=1" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0006/913/390/6913390_L.jpg?t=1578272401723", alt="")
+                h3 獨家加贈飯店枕
+                h4 精梳純棉兩用被床包
+                p
+                  del 3980
+                  b 爆殺
+                  span.money $
+                  span.price 1111
+                  small /組
+            .furniture-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4800100111&p_orderType=1" target="_blank")
+                p 看更多>
+          li.furniture-item
+            .furniture-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1803100031&p_orderType=1" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0007/191/068/7191068_L.jpg?t=1578272401723", alt="")
+                h3 共三色尺寸任選
+                h4 羊羔絨10cm雙面床墊
+                p
+                  del 1399
+                  b 均一價
+                  span.money $
+                  span.price 888
+            .furniture-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1803100031&p_orderType=1" target="_blank")
+                p 看更多>
+          li.furniture-item
+            .furniture-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2152700043&p_orderType=1" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0007/094/678/7094678_L.jpg?t=1578272401723", alt="")
+                h3 輕鬆成家6折起
+                h4 林氏木業實木高床滑梯床組
+                p
+                  del 32990
+                  b 特價
+                  span.money $
+                  span.price 27999
+            .furniture-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2152700043&p_orderType=1" target="_blank")
+                p 看更多>
+          li.furniture-item
+            .furniture-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1802900013&p_orderType=1" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0005/753/805/5753805_L.jpg?t=1578272401723", alt="")
+                h3 年終賠殺破盤價
+                h4 一體環繞式腰托透氣電腦椅 
+                p
+                  del 3980
+                  b 特價
+                  span.money $
+                  span.price 1480
+            .furniture-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1802900013&p_orderType=1" target="_blank")
+                p 看更多>
+          li.furniture-item
+            .furniture-brand
+              a(href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=6545472" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0006/545/472/6545472_L.jpg?t=1578272401723", alt="")
+                h3 加碼送藍旅頸枕
+                h4 日本熱銷★殿堂的夢枕
+                p
+                  del 4200
+                  b 特價
+                  span.money $
+                  span.price 2280
+            .furniture-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4800200039&p_orderType=1" target="_blank")
+                p 看更多>
+          li.furniture-item
+            .furniture-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2704000178&p_orderType=1" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0006/342/840/6342840_L.jpg?t=1578272401723", alt="")
+                h3 年前煥新超值推薦
+                h4 直人木業★天然原石廚櫃
+                p
+                  del 14800
+                  b 激殺
+                  span.money $
+                  span.price 6552
+            .furniture-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2704000178&p_orderType=1" target="_blank")
+                p 看更多>
+          li.furniture-item
+            .furniture-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4800100849&p_orderType=1" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0006/128/556/6128556_L.jpg?t=1578272401723", alt="")
+                h3 多款任選均一價
+                h4 法蘭絨被套床包
+                p
+                  del 2980
+                  b 均價
+                  span.money $
+                  span.price 890
+                  small /組
+            .furniture-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4800100849&p_orderType=1" target="_blank")
+                p 看更多>
+      //- 傢俱寢飾
+      //- 運動休閒
+      .bg-sport#area-sport
+        a(href="https://www.momoshop.com.tw/category/LgrpCategory.jsp?l_code=5099900000" target="_blank")
+          .sport-btn
+            h3 立刻前往
+            img(src="https://img3.momoshop.com.tw/ecm/img/online/10/007/28/762/images/btn_go.png?t=1578272401723", alt="")
+        ul.sport
+          li.sport-item
+            .sport-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4100503002&p_orderType=1" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0006/935/750/6935750_L.jpg?t=1578272401723", alt="")
+                h3 ★冬季騎士救星★
+                h4 防風防水觸控騎士手套
+                p
+                  del 650
+                  b 下殺
+                  span.money $
+                  span.price 385
+            .sport-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4100503002&p_orderType=1" target="_blank")
+                p 看更多>
+          li.sport-item
+            .sport-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=5000400418&p_orderType=1" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0006/973/407/6973407_L.jpg?t=1578272401723", alt="")
+                h3 電視熱銷No.1
+                h4 【守席】小圓有氧循環電動坐走機
+                p
+                  del 18800
+                  b 破盤
+                  span.money $
+                  span.price 8900
+            .sport-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=5000400418&p_orderType=1" target="_blank")
+                p 看更多>
+          li.sport-item
+            .sport-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2147000012&p_orderType=1" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0006/339/210/6339210_L.jpg?t=1578272401723", alt="")
+                h3 加碼送★美型運動機
+                h4 【FUJI】極智全功能按摩椅
+                p
+                  del 88000
+                  b 折後
+                  span.money $
+                  span.price 59999
+            .sport-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2147000012&p_orderType=1" target="_blank")
+                p 看更多>
+          li.sport-item
+            .sport-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1503100072&p_orderType=1" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0005/415/246/5415246_L.jpg?t=1578272401723", alt="")
+                h3 年末破盤下殺9折
+                h4 【departure】29吋異形箱
+                p
+                  del 15800
+                  b 破盤
+                  span.money $
+                  span.price 14220
+            .sport-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1503100072&p_orderType=1" target="_blank")
+                p 看更多>
+          li.sport-item
+            .sport-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1601700594&p_orderType=1" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0007/167/410/7167410_L.jpg?t=1578272401723", alt="")
+                h3 買一送一↘椅背可折
+                h4 加大加高款鋁合金大川椅 
+                p
+                  del 2960
+                  b 下殺
+                  span.money $
+                  span.price 900
+                  small /入
+            .sport-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1601700594&p_orderType=1" target="_blank")
+                p 看更多>
+          li.sport-item
+            .sport-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4100600083&p_orderType=1" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0007/286/503/7286503_L.jpg?t=1578272401723", alt="")
+                h3 年終最狂飆低價
+                h4 【CARSCAM】電動自行車
+                p
+                  del 28800
+                  b 下殺
+                  span.money $
+                  span.price 18800
+            .sport-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4100600065&p_orderType=1" target="_blank")
+                p 看更多>
+          li.sport-item
+            .sport-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4100200095&p_orderType=1" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0006/297/071/6297071_L.jpg?t=1578272401723", alt="")
+                h3 年終狂降↘再贈32G卡
+                h4 日本強牌【TRYWIN】廣角記錄器 
+                p
+                  del 3900
+                  b 破盤
+                  span.money $
+                  span.price 999
+            .sport-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4100200095&p_orderType=1" target="_blank")
+                p 看更多>
+          li.sport-item
+            .sport-brand
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1603200134&p_orderType=1" target="_blank")
+                img(src="https://img1.momoshop.com.tw/goodsimg/0007/138/562/7138562_L.jpg?t=1578272401723", alt="")
+                h3 年終下殺破盤價
+                h4 【KISSDIAMOND】晴雨兩用風雨衣
+                p
+                  del 1099
+                  b 特價
+                  span.money $
+                  span.price 899
+                  small /箱
+            .sport-more
+              a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1603200134&p_orderType=1" target="_blank")
+                p 看更多>
+      //- 運動休閒
+    //- 關鍵字hashtag
+    .area-hashtag
+      dl.hashtag-box
+        dt 主題關鍵字：
+        dd
+          strong
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1800600029&p_orderType=1")
+              span 除舊佈新家具3折up
+          strong
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4800100849&p_orderType=1")
+              span 搶手法蘭絨床包
+          strong
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1803100031&p_orderType=1")
+              span 床墊特賣1折up
+          strong
+            a(href="https://www.momoshop.com.tw/edm/cmmedm.jsp?lpn=O2k7FEMqgPt&n=1&mdiv=2134500000-bt_1_007_01-bt_1_007_01_e11&ctype=B")
+              span MUJI無印良品
+          strong
+            a(href="https://www.momoshop.com.tw/category/LgrpCategory.jsp?l_code=1803200000")
+              span 品牌傢俱 獨殺5折up
+          strong
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1800800115&p_orderType=1")
+              span 桌椅年終特賣
+          strong
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4800500079&p_orderType=1")
+              span 熱銷寢飾下殺
+          strong
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4100300251&p_orderType=1")
+              span 熱銷爆品★汽百破盤
+          strong
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=5000700610&p_orderType=1")
+              span 瑜珈特賣5折up
+          strong
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=5000800424&p_orderType=1")
+              span 紓壓按摩5折up
+          strong
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1503100030&TOP30=Y")
+              span 行李箱Top30
+          strong
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1601700562&p_orderType=1")
+              span Coleman新品上市
+          strong
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=4100400146&p_orderType=1")
+              span 電動車熱銷TOP
+          strong
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2700400450&p_orderType=1")
+              span 幫寶適年終加碼
+          strong
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2700201023&p_orderType=1")
+              span JOIE momo獨賣上市
+          strong
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2703800259&p_orderType=1")
+              span 日本母嬰雜貨
+          strong
+            a(href="https://www.momoshop.com.tw/category/LgrpCategory.jsp?l_code=2701800000")
+              span 成人紙尿褲
+          strong
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2700400451&p_orderType=1")
+              span 滿意寶寶超殺
+          strong
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2700400055&p_orderType=1")
+              span 妙而舒熱銷
+          strong
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2704400053&TOP30=Y")
+              span 兒童成長書桌椅
+          strong
+            a(href="https://www.momoshop.com.tw/edm/cmmedm.jsp?lpn=O3TobedaR0b&n=1")
+              span 玩具總動員
+          strong
+            a(href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2704000161&p_orderType=1")
+              span 樂高熱銷TOP
+      
+    //- 最尾
+    .footer
+      p 優惠商品數量有限，售完為止。本廣告活動頁商品規格、顏色、價位、贈品如與購物車不符，以購物車標示為準
+    //- 最尾
